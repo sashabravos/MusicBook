@@ -65,7 +65,9 @@ final class ArtistsListViewController: UIViewController {
         if sender == sortButton {
             changeSort()
         } else {
-        }
+            let detailVC = ArtistDetailViewController()
+            detailVC.delegate = self
+            self.present(detailVC, animated: true)        }
     }
     
     private func setupSubviews() {
@@ -164,6 +166,12 @@ extension ArtistsListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let detailVC = ArtistDetailViewController()
+        detailVC.delegate = self
+        detailVC.currentCell = indexPath
+        detailVC.artist = fetchedResultsController.object(at: indexPath)
+        
+        self.present(detailVC, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
@@ -236,5 +244,42 @@ extension ArtistsListViewController: NSFetchedResultsControllerDelegate {
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
+    }
+}
+
+// MARK: - ArtistDetailDelegate
+
+extension ArtistsListViewController: ArtistDetailDelegate {
+    func updateWithData(_ controller: ArtistDetailViewController,
+                        didSaveArtist artistModel: ArtistModel,
+                        indexPath: IndexPath) {
+        let artist = self.fetchedResultsController.object(at: indexPath)
+        artist.name = artistModel.name
+        artist.surname = artistModel.surname
+        artist.bDay = artistModel.bDay
+        artist.country = artistModel.country
+        artist.genre = artistModel.genre
+        artist.group = artistModel.group
+        
+        do {
+            try fetchedResultsController.performFetch()
+            tableView.reloadData()
+        } catch {
+            print("Error updating new artist: \(error)")
+        }
+    }
+    
+    func addNewArtist(_ controller: ArtistDetailViewController,
+                      didSaveArtist artistModel: ArtistModel,
+                      with newArtist: Artist?) {
+        if let artist = newArtist {
+            artist.name = artistModel.name
+            artist.surname = artistModel.surname
+            artist.bDay = artistModel.bDay
+            artist.country = artistModel.country
+            artist.genre = artistModel.genre
+            artist.group = artistModel.group
+            
+        }
     }
 }

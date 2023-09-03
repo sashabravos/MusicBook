@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>UIAppFonts</key>
-	<array>
-		<string>SleepLiketheDead.ttf</string>
-	</array>
+    <array>
+        <string>SleepLiketheDead.ttf</string>
+    </array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
