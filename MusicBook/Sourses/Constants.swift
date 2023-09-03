@@ -10,13 +10,13 @@ import UIKit
 enum Constants {
     
     enum Color {
-        static let primaryColor = UIColor(named: "primaryColor")
-        static let blackBG = UIColor(named: "blackBG")
-        static let blackCard = UIColor(named: "blackCard")
+        static let primaryColor = UIColor(named: "primaryColor")!
+        static let blackBG = UIColor(named: "blackBG")!
+        static let blackCard = UIColor(named: "blackCard")!
         
-        static let textPrimary = UIColor(named: "textPrimary")
-        static let textSecondary = UIColor(named: "textSecondary")
-        static let dangerColor = UIColor(named: "dangerColor")
+        static let textPrimary = UIColor(named: "textPrimary")!
+        static let textSecondary = UIColor(named: "textSecondary")!
+        static let dangerColor = UIColor(named: "dangerColor")!
     }
     
     enum Font {

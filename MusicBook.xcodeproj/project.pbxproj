@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		039B88192AA3FB3B003A3D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B88182AA3FB3B003A3D11 /* AppDelegate.swift */; };
 		039B881B2AA3FB3B003A3D11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B881A2AA3FB3B003A3D11 /* SceneDelegate.swift */; };
-		039B881D2AA3FB3B003A3D11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B881C2AA3FB3B003A3D11 /* ViewController.swift */; };
+		039B881D2AA3FB3B003A3D11 /* ArtistsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B881C2AA3FB3B003A3D11 /* ArtistsListViewController.swift */; };
 		039B88202AA3FB3B003A3D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039B881E2AA3FB3B003A3D11 /* Main.storyboard */; };
 		039B88222AA3FB3D003A3D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039B88212AA3FB3D003A3D11 /* Assets.xcassets */; };
 		039B88252AA3FB3D003A3D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039B88232AA3FB3D003A3D11 /* LaunchScreen.storyboard */; };
@@ -21,13 +21,15 @@
 		039B88442AA4E9E8003A3D11 /* sleep-like-the-dead.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039B88432AA4E9E3003A3D11 /* sleep-like-the-dead.ttf */; };
 		039B88462AA4EA7A003A3D11 /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B88452AA4EA7A003A3D11 /* StackView+Extension.swift */; };
 		039B88482AA4EB29003A3D11 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039B88472AA4EB29003A3D11 /* Colors.xcassets */; };
+		039B884B2AA4EE5F003A3D11 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B884A2AA4EE5F003A3D11 /* ArtistCell.swift */; };
+		039B884D2AA4EEE1003A3D11 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B884C2AA4EEE1003A3D11 /* HeaderLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		039B88152AA3FB3B003A3D11 /* MusicBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039B88182AA3FB3B003A3D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039B881A2AA3FB3B003A3D11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		039B881C2AA3FB3B003A3D11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		039B881C2AA3FB3B003A3D11 /* ArtistsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListViewController.swift; sourceTree = "<group>"; };
 		039B881F2AA3FB3B003A3D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		039B88212AA3FB3D003A3D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039B88242AA3FB3D003A3D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		039B88432AA4E9E3003A3D11 /* sleep-like-the-dead.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sleep-like-the-dead.ttf"; sourceTree = "<group>"; };
 		039B88452AA4EA7A003A3D11 /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
 		039B88472AA4EB29003A3D11 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		039B884A2AA4EE5F003A3D11 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		039B884C2AA4EEE1003A3D11 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				039B88352AA3FC9D003A3D11 /* ViewControllers */,
 				039B88382AA3FCCE003A3D11 /* Cells */,
 				039B883A2AA3FCE1003A3D11 /* Extensions */,
+				039B88492AA4EB50003A3D11 /* Assets */,
 				039B88332AA3FC78003A3D11 /* Sourses */,
 				039B88322AA3FC5C003A3D11 /* Storyboards */,
 				039B88262AA3FB3D003A3D11 /* Info.plist */,
@@ -96,7 +101,6 @@
 		039B88332AA3FC78003A3D11 /* Sourses */ = {
 			isa = PBXGroup;
 			children = (
-				039B88492AA4EB50003A3D11 /* Assets */,
 				039B88362AA3FCBB003A3D11 /* Constants.swift */,
 				039B88432AA4E9E3003A3D11 /* sleep-like-the-dead.ttf */,
 			);
@@ -115,7 +119,7 @@
 		039B88352AA3FC9D003A3D11 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				039B881C2AA3FB3B003A3D11 /* ViewController.swift */,
+				039B881C2AA3FB3B003A3D11 /* ArtistsListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -123,6 +127,7 @@
 		039B88382AA3FCCE003A3D11 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				039B884A2AA4EE5F003A3D11 /* ArtistCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 		039B883B2AA3FCF0003A3D11 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				039B884C2AA4EEE1003A3D11 /* HeaderLabel.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -243,11 +249,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				039B88422AA401AF003A3D11 /* MusicBook.xcdatamodeld in Sources */,
-				039B881D2AA3FB3B003A3D11 /* ViewController.swift in Sources */,
+				039B881D2AA3FB3B003A3D11 /* ArtistsListViewController.swift in Sources */,
+				039B884B2AA4EE5F003A3D11 /* ArtistCell.swift in Sources */,
 				039B88192AA3FB3B003A3D11 /* AppDelegate.swift in Sources */,
 				039B88462AA4EA7A003A3D11 /* StackView+Extension.swift in Sources */,
 				039B883F2AA40192003A3D11 /* ArtistModel.swift in Sources */,
 				039B881B2AA3FB3B003A3D11 /* SceneDelegate.swift in Sources */,
+				039B884D2AA4EEE1003A3D11 /* HeaderLabel.swift in Sources */,
 				039B88372AA3FCBB003A3D11 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
