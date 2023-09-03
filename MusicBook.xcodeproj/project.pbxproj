@@ -18,6 +18,9 @@
 		039B88372AA3FCBB003A3D11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B88362AA3FCBB003A3D11 /* Constants.swift */; };
 		039B883F2AA40192003A3D11 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B883E2AA40192003A3D11 /* ArtistModel.swift */; };
 		039B88422AA401AF003A3D11 /* MusicBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 039B88402AA401AF003A3D11 /* MusicBook.xcdatamodeld */; };
+		039B88442AA4E9E8003A3D11 /* sleep-like-the-dead.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039B88432AA4E9E3003A3D11 /* sleep-like-the-dead.ttf */; };
+		039B88462AA4EA7A003A3D11 /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039B88452AA4EA7A003A3D11 /* StackView+Extension.swift */; };
+		039B88482AA4EB29003A3D11 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039B88472AA4EB29003A3D11 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		039B88362AA3FCBB003A3D11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		039B883E2AA40192003A3D11 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
 		039B88412AA401AF003A3D11 /* MusicBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicBook.xcdatamodel; sourceTree = "<group>"; };
+		039B88432AA4E9E3003A3D11 /* sleep-like-the-dead.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sleep-like-the-dead.ttf"; sourceTree = "<group>"; };
+		039B88452AA4EA7A003A3D11 /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
+		039B88472AA4EB29003A3D11 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +96,9 @@
 		039B88332AA3FC78003A3D11 /* Sourses */ = {
 			isa = PBXGroup;
 			children = (
-				039B88212AA3FB3D003A3D11 /* Assets.xcassets */,
+				039B88492AA4EB50003A3D11 /* Assets */,
 				039B88362AA3FCBB003A3D11 /* Constants.swift */,
+				039B88432AA4E9E3003A3D11 /* sleep-like-the-dead.ttf */,
 			);
 			path = Sourses;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				039B883B2AA3FCF0003A3D11 /* CustomClasses */,
+				039B88452AA4EA7A003A3D11 /* StackView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,6 +150,15 @@
 			children = (
 			);
 			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		039B88492AA4EB50003A3D11 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				039B88212AA3FB3D003A3D11 /* Assets.xcassets */,
+				039B88472AA4EB29003A3D11 /* Colors.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +227,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039B88482AA4EB29003A3D11 /* Colors.xcassets in Resources */,
 				039B88252AA3FB3D003A3D11 /* LaunchScreen.storyboard in Resources */,
 				039B88222AA3FB3D003A3D11 /* Assets.xcassets in Resources */,
 				039B88202AA3FB3B003A3D11 /* Main.storyboard in Resources */,
+				039B88442AA4E9E8003A3D11 /* sleep-like-the-dead.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +245,7 @@
 				039B88422AA401AF003A3D11 /* MusicBook.xcdatamodeld in Sources */,
 				039B881D2AA3FB3B003A3D11 /* ViewController.swift in Sources */,
 				039B88192AA3FB3B003A3D11 /* AppDelegate.swift in Sources */,
+				039B88462AA4EA7A003A3D11 /* StackView+Extension.swift in Sources */,
 				039B883F2AA40192003A3D11 /* ArtistModel.swift in Sources */,
 				039B881B2AA3FB3B003A3D11 /* SceneDelegate.swift in Sources */,
 				039B88372AA3FCBB003A3D11 /* Constants.swift in Sources */,
